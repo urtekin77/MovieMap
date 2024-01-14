@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dblue"
+    tools:context=".Activity.SignUpActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/kullanici_resim"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/baseline_add_24"
+                android:background="@drawable/circle_cream"
+                android:layout_gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/kullanici_ad"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/edittext_background"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Username"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orange"/>
+
+            <EditText
+                android:id="@+id/singup_email"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:background="@drawable/edittext_background"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orange"/>
+
+
+            <TextView
+                android:id="@+id/singup_hata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/singup_password"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orange"  />
+
+
+            <TextView
+                android:id="@+id/password_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="200dp"
+                android:layout_height="58dp"
+                android:id="@+id/sing_up"
+                style="@android:style/Widget.Button"
+                android:layout_marginTop="32dp"
+                android:text="SING UP"
+                android:layout_gravity="center"
+                android:background="@drawable/orange_button"
+                android:textColor="@color/cream"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

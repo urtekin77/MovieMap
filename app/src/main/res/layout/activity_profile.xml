@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:background="@color/dblue">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/cream"
+                >
+
+                <ImageView
+                    android:id="@+id/profileAvatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/avatar1" />
+
+                <TextView
+                    android:id="@+id/profile_adi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Kullanıcı Adı"
+                    android:textColor="@color/dblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="example@gmail.com"
+                    android:textColor="@color/dblue"
+                    android:textSize="12sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:onClick="expand"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/editLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/blue"
+                        >
+
+
+
+                        <TextView
+                            android:id="@+id/editProfile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:drawableEnd="@drawable/arrow_down_24"
+                            android:text="Edit Profile"
+                            android:textColor="@color/cream"
+                            android:textSize="17sp"
+                            android:background="@drawable/edittext_blue"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/detayEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                          >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter your new username:"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/cream"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/edit_username"
+                                    android:textColor="@color/cream"
+                                    android:textSize="16sp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginBottom="30dp"
+                                    android:maxLines="1"
+                                    android:backgroundTint="@color/orange"
+                                    />
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="70dp"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/btnUpdate"
+                                    android:background="@drawable/orange_button"
+                                    android:text="UPDATE"
+                                    android:layout_marginStart="20dp"
+                                    android:textColor="@color/cream"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="20dp"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter your new password:"
+                                android:textSize="15sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/cream"/>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <EditText
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/edit_password"
+                                        android:textColor="@color/cream"
+                                        android:textSize="16sp"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginBottom="30dp"
+                                        android:inputType="textPassword"
+                                        android:maxLines="1"
+                                        android:backgroundTint="@color/orange"
+                                        />
+                                    <TextView
+                                        android:id="@+id/error"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/orange"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        android:layout_gravity="center"
+                                        android:gravity="center" />
+
+                                </LinearLayout>
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:layout_width="70dp"
+                                    android:layout_height="35dp"
+                                    android:id="@+id/btnUpdate2"
+                                    android:background="@drawable/orange_button"
+                                    android:text="UPDATE"
+                                    android:layout_marginStart="20dp"
+                                    android:textColor="@color/cream"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="20dp"
+                                    />
+
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                android:layout_marginBottom="15dp">
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Choose your new avatar:"
+                                        android:textSize="15sp"
+                                        android:layout_marginStart="20dp"
+                                        android:textColor="@color/cream"
+                                        android:drawablePadding="2dp"
+                                        android:gravity="center"
+                                        />
+
+                                    <androidx.appcompat.widget.AppCompatButton
+                                        android:layout_width="70dp"
+                                        android:layout_height="35dp"
+                                        android:id="@+id/btnUpdate3"
+                                        android:background="@drawable/orange_button"
+                                        android:text="UPDATE"
+                                        android:layout_marginStart="20dp"
+                                        android:textColor="@color/cream"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="20dp"
+                                        />
+
+
+
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:id="@+id/edit_avatar"
+                                    android:layout_width="90dp"
+                                    android:layout_height="90dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="40dp"
+                                    android:src="@drawable/baseline_add_24"
+                                    android:background="@drawable/circle_cream"
+                                    />
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sendUsaMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="16dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:onClick="expand2">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/blue"
+                        >
+                        <TextView
+                            android:id="@+id/text1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:drawableEnd="@drawable/arrow_down_24"
+                            android:gravity="center"
+                            android:text="Send Us a Message"
+                            android:textColor="@color/cream"
+                            android:textSize="17sp"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/MessageLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/editSendMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:hint="I'm waiting for your suggestions and comments."
+                                android:inputType="textMultiLine"
+                                android:maxLines="6"
+                                android:padding="5dp"
+                                android:textColorHint="@color/orange" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/sendMessageBtn"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginEnd="20dp"
+                                android:background="@drawable/orange_button"
+                                android:text="Send"
+                                android:textColor="@color/cream"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:onClick="expand3"
+                    >
+                    <LinearLayout
+                        android:id="@+id/CategorSelectLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/blue"
+                        >
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:drawableEnd="@drawable/arrow_down_24"
+                            android:gravity="center"
+                            android:text="Favorite Category"
+                            android:textColor="@color/cream"
+                            android:textSize="17sp"
+                            />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/favCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    android:onClick="expand4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/blue"
+                        >
+
+                        <TextView
+                            android:id="@+id/text15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Delete Account"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:drawableEnd="@drawable/arrow_down_24"
+                            android:textColor="@color/cream"
+                            android:textSize="17sp"
+                            android:background="@drawable/edittext_blue"/>
+
+                        <LinearLayout
+                            android:id="@+id/deleteLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="center"
+                                android:text="Are you sure you want to delete your account?"
+                                android:textColor="@color/cream"
+                                android:textSize="17sp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/account_delete"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="5dp"
+                                    android:drawableStart="@drawable/sad_24"
+                                    android:background="@drawable/orange_button"
+                                    android:gravity="center"
+                                    android:text="Delete"
+                                    android:textColor="@color/cream" />
+
+
+                                <androidx.appcompat.widget.AppCompatButton
+                                    android:id="@+id/give_up"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="2dp"
+                                    android:drawableStart="@drawable/happy_24"
+                                    android:background="@drawable/orange_button"
+                                    android:text="Give Up"
+                                    android:textColor="@color/cream" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/blue"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Log Out"
+                        android:textColor="@color/cream"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@drawable/logout_24"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/blue">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:id="@+id/discover_activity"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/explore_24" />
+
+                    <TextView
+                        android:id="@+id/textview6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Discover"
+                        android:textAlignment="center"
+                        android:textColor="@color/cream" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:id="@+id/list_activity"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/list"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/list_24" />
+
+                    <TextView
+                        android:id="@+id/textview7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lists"
+                        android:textAlignment="center"
+                        android:textColor="@color/cream" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:id="@+id/profil_activity"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/profil"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/account_circle_24" />
+
+                    <TextView
+                        android:id="@+id/textview8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="@color/cream" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
