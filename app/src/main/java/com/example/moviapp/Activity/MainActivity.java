@@ -427,7 +427,7 @@ public class MainActivity extends AppCompatActivity {
                             public void onResponse(Call<FilmApiResponse> call, Response<FilmApiResponse> response) {
                                 if (response.isSuccessful()){
                                     FilmApiResponse apiResponse = response.body();
-                                    Log.d("Burakkkahhaaan", "Filmler : " + apiResponse.getFilmler());
+                                    Log.d("Mesaaaajjjj", "Filmler : " + apiResponse.getFilmler());
                                     filmModels = apiResponse.getFilmler();
                                     SuggestionAdapter2.setFilmList(filmModels);
                                     SuggestionAdapter2.notifyDataSetChanged();
