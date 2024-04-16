@@ -105,7 +105,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         // Şifre unutulduğunda yapılacaklar
-        TextView forgetPassword = findViewById(id.forgetPassword);
+        TextView forgetPassword = findViewById(R.id.forgetPassword);
         forgetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
