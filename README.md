@@ -62,29 +62,29 @@ MovieMap, kullanıcılara film dünyasını keşfetme ve kişiselleştirilmiş f
 
 ### Giriş ve Tanıtım Ekranları
 <div align="center">
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/tanitim.jpeg" alt="Tanıtım Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/singup.jpeg" alt="Üyelik Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/login.jpeg" alt="Giriş Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/forgotPassword.jpeg" alt="Şifre Yenileme" width="250"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/tanitim.jpeg" alt="Tanıtım Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/singup.jpeg" alt="Üyelik Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/login.jpeg" alt="Giriş Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/forgotPassword.jpeg" alt="Şifre Yenileme" width="150"/>
 </div>
 
 ### Ana Sayfa ve Film Keşfi
 <div align="center">
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/anaSayfa1.jpeg" alt="Ana Sayfa Ekranı 1" width="250"/>
-<img src="https://github.com/urtekin77/MovieMap/blob/master/images/anaSayfa2.jpeg" alt="Ana Sayfa Ekranı 2" width="250"/>
-<img src="https://github.com/urtekin77/MovieMap/blob/master/images/kategoriAdd.jpeg" alt="Kategorik Film Öneri Ekranı" width="250"/>
-<img src="https://github.com/urtekin77/MovieMap/blob/master/images/search3.jpeg" alt="Arama Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/filmDetaySayfası1.jpeg" alt="Filim Detay Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/castDetay.jpeg" alt="Oyuncu Detay Ekranı" width="250"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/anaSayfa1jpeg.jpeg" alt="Ana Sayfa Ekranı 1" width="150"/>
+<img src="https://github.com/urtekin77/MovieMap/blob/master/images/anaSayfa2.jpeg" alt="Ana Sayfa Ekranı 2" width="150"/>
+<img src="https://github.com/urtekin77/MovieMap/blob/master/images/kategoriAdd.jpeg" alt="Kategorik Film Öneri Ekranı" width="150"/>
+<img src="https://github.com/urtekin77/MovieMap/blob/master/images/search3.jpeg" alt="Arama Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/filmDetaySayfası1.jpeg" alt="Filim Detay Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/castDetay.jpeg" alt="Oyuncu Detay Ekranı" width="150"/>
   
 </div>
 
 ### Profil ve Listeler
 <div align="center">
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/profil1.jpeg" alt="Profil Ekranı" width="250"/>
-<img src="https://github.com/urtekin77/MovieMap/blob/master/images/profil2.jpeg" alt="Profil Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/liste.jpeg" alt="Liste Ekranı" width="250"/>
-  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/watchedListe.jpeg" alt="İzlenenler Listesi Ekranı" width="250"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/profil1.jpeg" alt="Profil Ekranı" width="150"/>
+<img src="https://github.com/urtekin77/MovieMap/blob/master/images/profil2.jpeg" alt="Profil Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/liste.jpeg" alt="Liste Ekranı" width="150"/>
+  <img src="https://github.com/urtekin77/MovieMap/blob/master/images/watchedListe.jpeg" alt="İzlenenler Listesi Ekranı" width="150"/>
 </div>
 
 ## 🤝 Katkıda Bulunma
