@@ -21,16 +21,14 @@ MovieMap, kullanıcılara film dünyasını keşfetme ve kişiselleştirilmiş f
 
 ## 🚀 Teknolojiler
 
-### Geliştirme Ortamı
-- **Android Studio** - Mobil uygulama geliştirme ortamı
-- **Java** - Uygulamanın temel programlama dili
+| Kategori | Teknoloji | Açıklama |
+|----------|-----------|----------|
+| **Geliştirme Ortamı** | Android Studio | Mobil uygulama geliştirme ortamı |
+| | Java | Uygulamanın temel programlama dili |
+| **Veritabanı & API** | Firebase | Kullanıcı kimlik doğrulama (Authentication) ve gerçek zamanlı veritabanı (Realtime Database) |
+| | TMDB API | Film ve oyuncu verilerine erişim |
+| **Geliştirme Araçları** | Postman | API isteklerinin testi ve yönetimi |
 
-### Veritabanı & API
-- **Firebase** - Kullanıcı kimlik doğrulama (Authentication) ve gerçek zamanlı veritabanı (Realtime Database)
-- **TMDB API** - Film ve oyuncu verilerine erişim
-
-### Geliştirme Araçları
-- **Postman** - API isteklerinin testi ve yönetimi
 
 ## ⚙️ Kurulum
 
