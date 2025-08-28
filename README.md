@@ -95,15 +95,9 @@ MovieMap, kullanıcılara film dünyasını keşfetme ve kişiselleştirilmiş f
 4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
 5. Bir Pull Request açın
 
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasını inceleyin.
-
 ## 📞 İletişim
 
 Proje Sahibi: [@urtekin77](https://github.com/urtekin77)
-
-Proje Linki: [https://github.com/urtekin77/MovieMap](https://github.com/urtekin77/MovieMap)
 
 ---
 
